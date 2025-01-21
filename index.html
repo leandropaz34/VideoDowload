@@ -36,7 +36,14 @@
     </form>
     <p id="response-message"></p>
 </body>
-<script>
+
+
+<script src="js/index.js"></script>
+
+<script src="{{ url_for('static', filename='js/mejoras.js') }}"></script>
+
+
+<!-- <script>
     document.getElementById("download-form").addEventListener("submit", async (e) => {
         e.preventDefault();
         const link = document.getElementById("video-link").value;
@@ -48,5 +55,5 @@
         const result = await response.json();
         document.getElementById("response-message").textContent = result.message || result.error;
     });
-</script>
+</script> -->
 </html>
